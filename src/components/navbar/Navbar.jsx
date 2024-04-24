@@ -51,6 +51,10 @@ const Navbar = ({ notifyMsg }) => {
           </p>
 
           <p>
+            <Link to="/guide">Guide</Link>
+          </p>
+
+          <p>
             <Link to="/detect">Detect</Link>
           </p>
 

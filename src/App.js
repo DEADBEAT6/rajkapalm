@@ -1,13 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import {
-  Navbar,
-  Footer,
-  Home,
-  Detect,
-  NotFound,
-  Dashboard,
-} from "./components";
+import { Navbar, Home, Detect, NotFound, Dashboard, Guide } from "./components";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -50,6 +43,16 @@ function App() {
           element={
             <Layout>
               <Detect />
+            </Layout>
+          }
+        />
+
+        <Route
+          exact
+          path="/guide"
+          element={
+            <Layout>
+              <Guide />
             </Layout>
           }
         />

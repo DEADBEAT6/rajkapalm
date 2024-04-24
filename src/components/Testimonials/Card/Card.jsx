@@ -3,7 +3,7 @@ import "./Card.css";
 import LeftQuote from "../../../assests/left_quote.png";
 import UserIcon from "../../../assests/user-icon.png";
 
-const Card = ({ title, text, tag }) => {
+const Card = ({ title, text }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -13,7 +13,6 @@ const Card = ({ title, text, tag }) => {
 
         <div className="card-data">
           <h2>{title}</h2>
-          <p>{tag}</p>
         </div>
 
         <div className="card-icon">
